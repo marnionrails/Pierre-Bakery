@@ -26,7 +26,7 @@ namespace Bakery.Tests
       int result = newBread.BreadNumber;
 
       //Assert
-      Assert.AreEqual(result.GetType(), typeof(string));
+      Assert.AreEqual(result.GetType(), typeof(int));
     }
   }
 }
