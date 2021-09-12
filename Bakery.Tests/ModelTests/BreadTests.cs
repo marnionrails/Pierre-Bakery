@@ -28,5 +28,18 @@ namespace Bakery.Tests
       //Assert
       Assert.AreEqual(result.GetType(), typeof(int));
     }
+    [TestMethod]
+    public void GetBreadNumber_ReturnsBreadNumber_5()
+    {
+      //Arrange
+      int breadNumber = 2;
+      Bread newBread = new Bread(5);
+
+      //Act
+      int result = newBread.BreadNumber;
+
+      //Assert
+      Assert.AreEqual(result, breadNumber);
+    }
   }
 }
