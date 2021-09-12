@@ -41,5 +41,18 @@ namespace Bakery.Tests
       //Assert
       Assert.AreEqual(result, breadNumber);
     }
+    [TestMethod]
+    public void TestsBreadCost_MakesSureCostisDecimal_double()
+    {
+      //Arrange
+      double breadCost = 2.0;
+      Bread newBread = new Bread(5);
+
+      //Act
+      double result = newBread.BreadCost;
+
+      //Assert
+      Assert.AreEqual(result, typeof(int));
+    }
   }
 }
