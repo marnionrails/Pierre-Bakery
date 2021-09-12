@@ -52,7 +52,7 @@ namespace Bakery.Tests
       double result = newBread.BreadCost;
 
       //Assert
-      Assert.AreEqual(result, typeof(int));
+      Assert.AreEqual(result.GetType(), typeof(double));
     }
   }
 }
