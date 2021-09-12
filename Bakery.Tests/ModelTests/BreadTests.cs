@@ -58,7 +58,7 @@ namespace Bakery.Tests
     public void GetBreadCost_ReturnBreadCost_2()
     {
       //Arrange
-      double breadCost = 4.0;
+      double breadCost = 2.0;
       Bread newBread = new Bread(5);
 
       //Act
