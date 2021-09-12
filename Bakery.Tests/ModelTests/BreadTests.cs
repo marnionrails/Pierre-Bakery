@@ -32,7 +32,7 @@ namespace Bakery.Tests
     public void GetBreadNumber_ReturnsBreadNumber_5()
     {
       //Arrange
-      int breadNumber = 2;
+      int breadNumber = 5;
       Bread newBread = new Bread(5);
 
       //Act
