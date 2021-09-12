@@ -54,5 +54,18 @@ namespace Bakery.Tests
       //Assert
       Assert.AreEqual(result.GetType(), typeof(double));
     }
+    [TestMethod]
+    public void GetBreadCost_ReturnBreadCost_2()
+    {
+      //Arrange
+      double breadCost = 4.0;
+      Bread newBread = new Bread(5);
+
+      //Act
+      double result = newBread.BreadCost;
+
+      //Assert
+      Assert.AreEqual(result, breadCost);
+    }
   }
 }
