@@ -27,5 +27,19 @@ namespace Bakery.Tests
       //Assert
       Assert.AreEqual(result.GetType(), typeof(int));
     }
+
+    [TestMethod]
+    public void GetPastryNumber_ReturnsPastryr_5()
+    {
+      //Arrange
+      int pastryNumber = 3;
+      Pastry newPastry = new Pastry(5);
+
+      //Act
+      int result = newPastry.PastryNumber;
+
+      //Assert
+      Assert.AreEqual(result, pastryNumber);
+    }
   }
 }
