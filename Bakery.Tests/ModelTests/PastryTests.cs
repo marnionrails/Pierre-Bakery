@@ -14,5 +14,18 @@ namespace Bakery.Tests
       Pastry newPastry = new Pastry(2);
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
+     [TestMethod]
+    public void TestsBreadNumber_MakesSureBreadNumberisInt_True()
+    {
+      //Arrange
+      int pastryNumber = 2;
+      Pastry newPastry = new Pastry(pastryNumber);
+
+      //Act
+      int result = newPastry.PastryNumber;
+
+      //Assert
+      Assert.AreEqual(result.GetType(), typeof(string));
+    }
   }
 }
