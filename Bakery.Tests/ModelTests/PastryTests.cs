@@ -15,7 +15,7 @@ namespace Bakery.Tests
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
      [TestMethod]
-    public void TestsBreadNumber_MakesSureBreadNumberisInt_True()
+    public void TestsPastryNumber_MakesSurePastryNumberisInt_True()
     {
       //Arrange
       int pastryNumber = 2;
@@ -25,7 +25,7 @@ namespace Bakery.Tests
       int result = newPastry.PastryNumber;
 
       //Assert
-      Assert.AreEqual(result.GetType(), typeof(string));
+      Assert.AreEqual(result.GetType(), typeof(int));
     }
   }
 }
