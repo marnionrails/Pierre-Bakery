@@ -29,10 +29,10 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-    public void GetPastryNumber_ReturnsPastryr_5()
+    public void GetPastryNumber_ReturnsPastrynum_5()
     {
       //Arrange
-      int pastryNumber = 3;
+      int pastryNumber = 5;
       Pastry newPastry = new Pastry(5);
 
       //Act
