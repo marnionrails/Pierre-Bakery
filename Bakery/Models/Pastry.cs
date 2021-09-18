@@ -16,7 +16,16 @@ using System.Collections.Generic;
 
       public double TotalPastryCost()
       {
-        return 2 * PastryNumber;
+        double totalPastryCost;
+        if (PastryNumber == 3)
+        {
+          totalPastryCost = 5;
+        }
+        else
+        {
+          totalPastryCost = PastryNumber * 2;
+        }
+        return totalPastryCost;
       }
     }
   }
