@@ -16,7 +16,7 @@ using System.Collections.Generic;
 
       public double TotalPastryCost()
       {
-        return 2;
+        return 2 * PastryNumber;
       }
     }
   }
