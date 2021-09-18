@@ -23,7 +23,7 @@ using System.Collections.Generic;
         }
         else
         {
-          totalPastryCost = PastryNumber * 2;
+          totalPastryCost = ((PastryNumber - PastryNumber % 3)/3)*5 + ((PastryNumber%3)*2);
         }
         return totalPastryCost;
       }

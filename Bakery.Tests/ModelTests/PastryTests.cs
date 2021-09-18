@@ -136,5 +136,18 @@ namespace Bakery.Tests
       Assert.AreEqual(10,totalPastryCost);
 
     }
+    [TestMethod]
+    public void TotalPastryCost_ReturnsCostOfFivePastries_9()
+    {
+      //Arrange
+      int pastryNumber = 5;
+      Pastry newPastry = new Pastry(pastryNumber);
+
+      //Act
+      double totalPastryCost = newPastry.TotalPastryCost();
+
+      //Assert
+      Assert.AreEqual(9,totalPastryCost);
+    }
   }
 }
