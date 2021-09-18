@@ -82,7 +82,8 @@ namespace Bakery.Tests
 
       Assert.AreEqual(totalPastryCost, pastryCost);
     }
-    public void TotalPastryCost_ReturnsCostOfSinglePastry_Double()
+    [TestMethod]
+    public void TotalPastryCost_ReturnsCostOfSinglePastry_2()
     {
       //Arrange
       int pastryNumber = 1;
@@ -93,6 +94,20 @@ namespace Bakery.Tests
 
       //Assert
       Assert.AreEqual(2,totalPastryCost);
+    }
+    [TestMethod]
+    public void TotalPastryCost_ReturnsCostofTwoPastries_4()
+    {
+      //Arrange
+      int pastryNumber = 2;
+      Pastry newPastry = new Pastry(pastryNumber);
+
+      //Act
+      double totalPastryCost = newPastry.TotalPastryCost();
+
+      //Assert
+      Assert.AreEqual(4,totalPastryCost);
+
     }
   }
 }
