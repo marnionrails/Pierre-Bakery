@@ -96,5 +96,18 @@ namespace Bakery.Tests
       Assert.AreEqual(10,totalBreadCost);
 
     }
+    [TestMethod]
+    public void TotalBreadCost_ReturnsCostOfThreeLoaves_10()
+    {
+      //Arrange
+      int breadNumber = 3;
+      Bread newBread = new Bread(breadNumber);
+
+      //Act
+      double totalBreadCost = newBread.totalBreadCost();
+
+      //Assert
+      Assert.AreEqual(10,totalBreadCost);
+    }
   }
 }
