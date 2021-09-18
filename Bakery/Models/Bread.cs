@@ -16,6 +16,10 @@ using System.Collections.Generic;
       public double totalBreadCost()
       {
         double totalBreadCost = 5 * BreadNumber;
+        if (BreadNumber == 3)
+        {
+          totalBreadCost -=5;
+        }
         return totalBreadCost;
       }
     }
