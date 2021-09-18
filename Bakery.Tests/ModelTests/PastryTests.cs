@@ -76,7 +76,7 @@ namespace Bakery.Tests
       Pastry newPastry = new Pastry(pastryNumber);
 
       //Act
-      double totalPastryCost = pastryCost * newPastry.PastryNumber;
+      double totalPastryCost = newPastry.TotalPastryCost();
 
       //Assert
 
