@@ -72,7 +72,7 @@ namespace Bakery.Tests
     {
       //Arrange
       double pastryCost = 2.0;
-      int pastryNumber = 2;
+      int pastryNumber = 1;
       Pastry newPastry = new Pastry(pastryNumber);
 
       //Act
