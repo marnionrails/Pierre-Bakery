@@ -45,7 +45,6 @@ namespace Bakery.Tests
     public void TestsPastryCost_MakesSureCostisDecimal_double()
     {
       //Arrange
-      double pastryCost = 2.0;
       Pastry newPastry = new Pastry(5);
 
       //Act
@@ -66,6 +65,22 @@ namespace Bakery.Tests
 
       //Assert
       Assert.AreEqual(result, pastryCost);
+    }
+    [TestMethod]
+
+    public void TotalPastryCost_ReturnsTotalPastryCost_Double()
+    {
+      //Arrange
+      double pastryCost = 2.0;
+      int pastryNumber = 2;
+      Pastry newPastry = new Pastry(pastryNumber);
+
+      //Act
+      double totalPastryCost = pastryCost * newPastry.PastryNumber;
+
+      //Assert
+
+      Assert.AreEqual(totalPastryCost, pastryCost);
     }
   }
 }
