@@ -13,5 +13,9 @@ using System.Collections.Generic;
         BreadNumber = breadNumber;
         
       }
+      public double totalBreadCost()
+      {
+        return 5;
+      }
     }
   }
