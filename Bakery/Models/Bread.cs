@@ -15,7 +15,8 @@ using System.Collections.Generic;
       }
       public double totalBreadCost()
       {
-        return 5;
+        double totalBreadCost = 5 * BreadNumber;
+        return totalBreadCost;
       }
     }
   }
