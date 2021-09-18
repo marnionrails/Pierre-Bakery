@@ -13,5 +13,10 @@ using System.Collections.Generic;
         PastryNumber = pastryNumber;
         
       }
+
+      public double TotalPastryCost()
+      {
+        return 2;
+      }
     }
   }
