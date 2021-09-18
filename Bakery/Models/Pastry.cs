@@ -17,9 +17,9 @@ using System.Collections.Generic;
       public double TotalPastryCost()
       {
         double totalPastryCost;
-        if (PastryNumber == 3)
+        if (PastryNumber % 3 == 0)
         {
-          totalPastryCost = 5;
+          totalPastryCost = 5 * (PastryNumber/3);
         }
         else
         {
