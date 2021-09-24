@@ -5,13 +5,15 @@ using System.Collections.Generic;
     public class Bread
     {
 
-      public int BreadNumber {get; set;} = 2;
-      public double BreadCost {get; set;} = 2.0;
+      public int BreadNumber {get; set;} = 0;
+      public double BreadCost {get; set;} = 0.0;
+
+      private static int _totalBread = 0;
 
       public Bread(int breadNumber)
       {
         BreadNumber = breadNumber;
-        
+        _totalBread += BreadNumber;
       }
       public double totalBreadCost()
       {
@@ -21,6 +23,11 @@ using System.Collections.Generic;
           totalBreadCost -=5*BreadNumber/3;
         }
         return totalBreadCost;
+      }
+
+      public static int GetBreadTotal()
+      {
+        return _totalBread;
       }
     }
   }

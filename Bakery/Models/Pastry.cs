@@ -5,8 +5,10 @@ using System.Collections.Generic;
     public class Pastry
     {
 
-      public int PastryNumber {get; set;} = 2;
-      public double PastryCost {get; set;} = 2.0;
+      public int PastryNumber {get; set;} = 0;
+      public double PastryCost {get; set;} = 0.0;
+
+      private static int _totalPastry = 0;
 
       public Pastry(int pastryNumber)
       {
@@ -26,6 +28,10 @@ using System.Collections.Generic;
           totalPastryCost = ((PastryNumber - PastryNumber % 3)/3)*5 + ((PastryNumber%3)*2);
         }
         return totalPastryCost;
+      }
+      public static int GetPastryTotal()
+      {
+        return _totalPastry;
       }
     }
   }
